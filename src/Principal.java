@@ -1,9 +1,12 @@
+import com.project1.screenmatch.modelos.Pelicula;
+
 public class Principal {
     public static void main(String[] args) {
         Pelicula mipelicula = new Pelicula();
-        mipelicula.nombre = "Piratas del Caribe";
-        mipelicula.fechaLanzamiento = 2024;
-        mipelicula.duracionEnMinuto = 120;
+        mipelicula.setNombre("Piratas del Caribe");
+        mipelicula.setFechaLanzamiento(2024);
+        mipelicula.setDuracionEnMinuto(120);
+        mipelicula.setIncluidoEnPlan(true);
 
         mipelicula.nuestraFichaTecnica();
         mipelicula.evalua(4.3);
@@ -14,12 +17,7 @@ public class Principal {
         System.out.println(mipelicula.calcularMedia());
 
 
-        Pelicula miOtraPelicula = new Pelicula();
-        miOtraPelicula.nombre = "Matrix";
-        miOtraPelicula.fechaLanzamiento =1998;
-        miOtraPelicula.duracionEnMinuto = 90;
 
-        miOtraPelicula.nuestraFichaTecnica();
 
     }
 }
