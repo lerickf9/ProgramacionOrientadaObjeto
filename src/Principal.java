@@ -1,4 +1,5 @@
 import com.project1.screenmatch.modelos.Pelicula;
+import com.project1.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -16,7 +17,14 @@ public class Principal {
         System.out.println(mipelicula.getTotalEvaluaciones());
         System.out.println(mipelicula.calcularMedia());
 
+        Serie casaDragon = new Serie();
+        casaDragon.setNombre("La Casa de Dragon");
+        casaDragon.setFechaLanzamiento(2022);
+        casaDragon.setTemporadas(1);
+        casaDragon.setMinutosPorEpisodio(50);
+        casaDragon.setEpisodiosPorTemporada(10);
 
+        System.out.println(casaDragon.getDuracionEnMinuto());
 
 
     }
