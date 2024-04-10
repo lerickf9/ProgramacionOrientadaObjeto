@@ -10,16 +10,14 @@ public class Principal {
         mipelicula.evalua(4.2);
 
 
-        System.out.println(mipelicula.sumaEvaluaciones);
-        System.out.println(mipelicula.totalEvaluaciones);
+        System.out.println(mipelicula.getTotalEvaluaciones());
         System.out.println(mipelicula.calcularMedia());
+
 
         Pelicula miOtraPelicula = new Pelicula();
         miOtraPelicula.nombre = "Matrix";
         miOtraPelicula.fechaLanzamiento =1998;
         miOtraPelicula.duracionEnMinuto = 90;
-
-        System.out.println("*******************++");
 
         miOtraPelicula.nuestraFichaTecnica();
 
