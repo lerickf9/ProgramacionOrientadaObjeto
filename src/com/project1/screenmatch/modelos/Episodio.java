@@ -1,12 +1,16 @@
 package com.project1.screenmatch.modelos;
 
-public class Episodio {
+import com.project1.screenmatch.calculos.Clasificacion;
+
+public class Episodio implements Clasificacion {
 
     private int numeroEpisodio;
 
     private String nombre;
 
     private Serie serie;
+
+    private int totalVisualizaciones;
 
     public int getNumeroEpisodio() {
         return numeroEpisodio;
@@ -30,5 +34,14 @@ public class Episodio {
 
     public void setSerie(Serie serie) {
         this.serie = serie;
+    }
+
+    @Override
+    public int getClasificacion() {
+        if(totalVisualizaciones>100){
+            return 4;
+        }else{
+            return 2;
+        }
     }
 }
