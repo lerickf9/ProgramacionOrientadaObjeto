@@ -8,9 +8,9 @@ public class Serie extends Titulo{
 
     int minutosPorEpisodio;
 
-    @java.lang.Override
+    @Override
     public int getDuracionEnMinuto() {
-        return super.getDuracionEnMinuto();
+        return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
 
     public int getTemporadas() {
