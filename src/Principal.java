@@ -1,4 +1,5 @@
 import com.project1.screenmatch.calculos.CalculadoraDeTiempo;
+import com.project1.screenmatch.calculos.FiltroRecomendaciones;
 import com.project1.screenmatch.modelos.Pelicula;
 import com.project1.screenmatch.modelos.Serie;
 
@@ -40,6 +41,8 @@ public class Principal {
         calculadora.incluye(otraPelicula);
         System.out.println(calculadora.getTiempoTotal());
 
+        FiltroRecomendaciones filtroRecomendaciones = new FiltroRecomendaciones();
+        filtroRecomendaciones.filtra(mipelicula);
 
     }
 }
