@@ -1,5 +1,6 @@
 import com.project1.screenmatch.calculos.CalculadoraDeTiempo;
 import com.project1.screenmatch.calculos.FiltroRecomendaciones;
+import com.project1.screenmatch.modelos.Episodio;
 import com.project1.screenmatch.modelos.Pelicula;
 import com.project1.screenmatch.modelos.Serie;
 
@@ -43,6 +44,14 @@ public class Principal {
 
         FiltroRecomendaciones filtroRecomendaciones = new FiltroRecomendaciones();
         filtroRecomendaciones.filtra(mipelicula);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumeroEpisodio(1);
+        episodio.setNombre("La casa");
+        episodio.setSerie(casaDragon);
+        episodio.setTotalVisualizaciones(300);
+
+        filtroRecomendaciones.filtra(episodio);
 
     }
 }
